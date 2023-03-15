@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    width:auto;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+#logo{
+    margin: 10px;
+    height: 8vh;
+    width: 5vw;
+}
+.nav{
+    margin: 20px;
+    display: flex;
+    padding: 3px;
+}
+.nav h3{
+    padding: 3px;
+    /* margin: 2px; */
+}
+
+.banner{
+    
+    width: fit-content;
+    height: fit-content ;
+    padding: 5px;
+    display: grid;
+    grid-template-columns:  0.6fr 0.4fr;
+    grid-gap:10px;
+}
+.img{
+    background-size:100% 68%;
+    object-fit: contain;
+    overflow: hidden;    
+}
+.imgcol{
+    display: grid;
+    grid-template-rows:  0.6fr 0.8fr;
+    grid-gap:10px;
+    object-fit: contain;
+    overflow: hidden;  
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#blog-list-container{
+    /* background-color: #D875E1; */
+    width: auto;
+    height: fit-content;
+    margin: 15px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows:  repeat(2,1fr);
+    grid-template-columns:  repeat(3,1fr);
+    grid-gap:10px;
+    object-fit: contain;
+    position: relative;
+}
+
+
+
+.blog-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.blog-image{
+    height: 300px;
+    width: auto;
+}
+
+
+
+.blog-detail-container{
+    display: grid;
+    grid-template-columns:  2fr 1fr;
+    background-color: aquamarine;
+    width: 100%;
+    height: 200%;
+}
+
+.blog-text{
+    display: grid;
+
+    object-fit: contain;
+    overflow: hidden;
+}
+.blog-image{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    object-fit: contain;
+    overflow: hidden;
+    height: 100%;
+    width:100%
+}
+
+#blog-detail{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    object-fit: contain;
+    overflow: hidden;
+}
+#blog-detail{
+    display: flex;
+    justify-content: space-between;
+}
+#detail-section-by-id{
+    justify-content: center;
+}
+
+#detail-section-by-id img{
+    height: auto;
+    max-width: 280px;;
+}
+
+.readmoreContainer{
+    display: flex;
+    margin:55px;
+    justify-content: end;
+    grid-template-rows: 1fr 1fr;
+    /* background-color: pink; */
+    /* margin: 15px; */
+}
+
+#read-more{
+    margin: 25px;
+    padding: 25px;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
