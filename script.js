@@ -1,6 +1,6 @@
 const getBlog = async () => {
     const response = await fetch(
-        "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
+        "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink"
     );
     
     const data_drink = await response.json();
@@ -21,7 +21,7 @@ const getBlog = async () => {
             <img class="blog-image"
             src="${item.strDrinkThumb}"
             />
-            <h4 style="padding: 5px">${item.strDrink}</h4>
+            <h4 style="padding: 27px">${item.strDrink}</h4>
 
 
         </div>`;
@@ -62,10 +62,9 @@ const id = new URLSearchParams(window.location.search).get('id');
                     
                     <p style="padding: 5px">Glass : ${data.strGlass}</p>
                     <h3>How to make it?</h3>
-                    <p style="padding: 5px">${data.strInstructions}</p>
+                    <div style ="width:280px; height: auto; color:black"><p> ${data.strInstructions}</p></div>
                 </div>
             </div>
-            <div id="read-more">
             
             </div>
             
